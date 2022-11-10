@@ -117,16 +117,10 @@ input{
   font-size: 150%;
   font-weight: bolder;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
+  grid-template-columns: 1fr 1fr;  
 }
 .result >div{  
   padding-bottom: 40px;
-  justify-content: center;
-  align-content: center;
 }
 
 .button-small{
