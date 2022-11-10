@@ -200,6 +200,9 @@ input{
 .content-detail .button-content-small:hover{
   background-color: #cacaca;
 }
+.content-review-text{
+  margin: 8px 0;
+}
 
 select{
   width: 200px;
@@ -212,4 +215,7 @@ select{
 
 table{
   width: 100%;
+}
+.content-radio{
+  font-size: 15px;
 }

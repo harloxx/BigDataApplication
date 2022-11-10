@@ -19,5 +19,5 @@
         movie_review.html         👉 리뷰 작성 페이지
         review.html               👉 전체 리뷰 조회 페이지
         review_modify.html        👉 리뷰 수정 페이지
-        statics.html              👉 영화 통계 조회 페이지
+        statics.html              👉 장르별 영화 통계 조회 페이지
 ```

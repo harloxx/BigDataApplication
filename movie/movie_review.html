@@ -21,8 +21,8 @@
    <div class="container">
      <div class="menu">
       <div class="m" onclick="location.href='../index.html'">영화 목록</div>
-      <div class="m-un" onclick="location.href='./statics.html'">영화 통계</div>
-      <div class="m-un" onclick="location.href='./distributor/distributor_add.html'">배급사 목록</div>
+      <div class="m-un" onclick="location.href='../genre/statics.html'">장르별 영화 통계</div>
+      <div class="m-un" onclick="location.href='../distributor/distributor_add.html'">배급사 목록</div>
   
     </div>
      <div class="content">
@@ -33,15 +33,27 @@
         <div >해리포터와 마법사의 돌</div>
         <div>평점 : 5.0</div>
 
-        <br/>
 
+        <form>
+            <div class="content-radio">
+                <label>
+                    평점 높은 순 <input type="radio" name="order"  style="width:15px;height:15px"/>
+                </label>
+                <label>
+                    평점 낮은 순 <input type="radio" name="order" style="width:15px;height:15px"/>
+                </label>
+                <button class="button-content-small" style="background-color: #f7bf59;color:white;">조회</button>
+            </div>
+        </form>
+        
+        <br/>
         <div class="content-small-text"><i>(리뷰 / 별점)</i></div>
-        <div>영화 너무 눈물난다.. / 5.0 
+        <div class="content-review-text">영화 너무 눈물난다.. / 5.0 
             <button class="button-content-small" onclick="location.href='./review_modify.html'">수정</button>
             <button class="button-content-small">삭제</button>
         </div>
-        <div>최고의 영화 / 5.0 <button class="button-content-small">수정</button><button class="button-content-small">삭제</button></div>
-        <div>CG 티가 많이 나요 / 3.0 <button class="button-content-small">수정</button><button class="button-content-small">삭제</button></div>
+        <div class="content-review-text">최고의 영화 / 5.0 <button class="button-content-small">수정</button><button class="button-content-small">삭제</button></div>
+        <div class="content-review-text">CG 티가 많이 나요 / 3.0 <button class="button-content-small">수정</button><button class="button-content-small">삭제</button></div>
         
         
        </div>
