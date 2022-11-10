@@ -1,3 +1,23 @@
-상단 바는 페이지 접속을 위해 임의로 작성했습니다. 반복되는 요소는 재활용해서 사용하세요!   
-![image](https://user-images.githubusercontent.com/79822913/201005264-24415a1f-9e5a-4ff2-ba89-2654c5f9ba3d.png)
-
+```
+│  index.html  
+├─css
+│      style.css  
+│
+├─distributor
+│      distributor_add.html       👉 배급사 추가/수정/삭제 페이지
+│
+├─genre
+│      genre_add.html             👉 영화 장르 추가/수정/삭제 페이지
+│
+├─js
+│      script.js
+│
+└─movie
+        add_movie.html            👉 영화 추가 페이지
+        modify_movie_detail.html  👉 영화 상세 정보 수정 페이지
+        movie_detail.html         👉 영화 상세 정보 보기 페이지
+        movie_review.html         👉 리뷰 작성 페이지
+        review.html               👉 전체 리뷰 조회 페이지
+        review_modify.html        👉 리뷰 수정 페이지
+        statics.html              👉 영화 통계 조회 페이지
+```
