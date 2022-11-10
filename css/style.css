@@ -1,0 +1,144 @@
+/*web font*/
+
+@font-face {
+  font-family: 'EliceDigitalBaeum-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'EliceDigitalBaeum-Bd';
+  
+}
+
+header{
+  background-color: rgb(0,70,42);
+  height: 330px; 
+  padding: 0 120px;
+  color: white;
+}
+ .movie-icon{
+    height: 180px;
+    position: absolute;
+    top: 120px;
+    right: 120px;
+    
+  }
+.title{
+  position: absolute;
+  margin-top: 150px;
+  font-size:60px;
+  font-weight: bolder;
+}
+.subtitle{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 240px;
+}
+.container{
+  height: 100%;
+  padding:60px 90px;
+}
+.menu{
+  display: flex;
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.menu .m{
+   margin-right: 30px;
+}
+
+.content{
+  align-content: center;
+  text-align: center;
+  margin: 50px 0;
+}
+.content-title{
+  font-size: 200%;
+  font-weight: bolder;
+}
+.search-container{
+  margin: 60px 0 50px 0;
+  font-size: 150%;
+  font-weight: bolder;
+}
+input{
+  height: 50px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.button-grey{
+  border-style: none;
+  height: 50px;
+  width: 100px;
+  font-size: 100%;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #f7bf59;
+  color: white;
+}
+.button-grey:hover{
+  background-color: #e4b358;
+}
+.button-pink{
+  border-style: none;
+  height: 50px;
+  width: 100px;
+  background-color: #FF9D72;
+  color: white;
+  font-size: 100%;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+.button-pink:hover{
+  background-color: #ff8855;
+}
+
+.result{
+  font-size: 150%;
+  font-weight: bolder;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.result >div{  
+  padding-bottom: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
+.button-small{
+ border: none;  
+  height: 40px;
+  width: 90px;
+  font-size: 80%;
+  font-weight: bolder;
+   margin: 0 100px 0 30px;
+   border-radius: 10px;
+}
+.button-small:hover{
+  background-color: #cacaca;
+}
+.movie-result{
+  font-size: 27px;
+}
+.movie-result > div{  
+  padding: 10px;
+}
+.button-detail{  
+ border: none;  
+ height: 40px;
+ width: 120px;
+ font-size: 20px;
+ font-weight: bolder;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.button-detail:hover{
+  background-color: #cacaca;
+}
