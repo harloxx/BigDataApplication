@@ -39,6 +39,11 @@ header{
   height: 100%;
   padding:60px 90px;
 }
+.container-title{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
 .menu{
   display: flex;
   color: black;
@@ -47,6 +52,11 @@ header{
 }
 .menu .m{
    margin-right: 30px;
+}
+.menu .m-un{
+  
+  margin-right: 30px;
+  color: rgb(170, 170, 170)
 }
 
 .content{
@@ -57,6 +67,11 @@ header{
 .content-title{
   font-size: 200%;
   font-weight: bolder;
+  margin: 30px;
+}
+.content-small-text{
+  font-size: 20px;
+  color: white;
 }
 .search-container{
   margin: 60px 0 50px 0;
@@ -68,6 +83,7 @@ input{
   width: 300px;
   margin: 20px;
   border-radius: 10px;
+  font-size: 23px;
 }
 .button-grey{
   border-style: none;
@@ -77,7 +93,8 @@ input{
   font-weight: bolder;
   border-radius: 10px;
   background-color: #f7bf59;
-  color: white;
+  color: white;  
+  margin: 0 5px;
 }
 .button-grey:hover{
   background-color: #e4b358;
@@ -118,12 +135,29 @@ input{
   width: 90px;
   font-size: 80%;
   font-weight: bolder;
-   margin: 0 100px 0 30px;
+  margin: 0 100px 0 30px;
    border-radius: 10px;
 }
 .button-small:hover{
   background-color: #cacaca;
 }
+.button-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-content{
+  border: none;  
+   height: 40px;
+   width: 90px;
+   font-size: 80%;
+   font-weight: bolder;
+    border-radius: 10px;
+    margin: 0 10px;
+ }
+ .button-content:hover{
+   background-color: #cacaca;
+ }
 .movie-result{
   font-size: 27px;
 }
@@ -141,4 +175,41 @@ input{
 }
 .button-detail:hover{
   background-color: #cacaca;
+}
+
+.content-detail{
+  font-size: 25px;
+  background-color: #dddddd;
+  border-radius: 20px;
+  padding: 40px 30px 30px 30px;
+  margin: 0 20%;
+}
+.content-detail .detail-title{
+  font-size: 30px;
+}
+
+.content-detail .button-content-small{
+  border: none;  
+ height: 30px;
+ width: 70px;
+ font-size: 14px;
+ font-weight: bolder;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.content-detail .button-content-small:hover{
+  background-color: #cacaca;
+}
+
+select{
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+}
+.review-text{
+  height: 100px;
+}
+
+table{
+  width: 100%;
 }
