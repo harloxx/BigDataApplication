@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta charset="UTF-8">
         <title>Travel Essential Items</title>
         <link rel="stylesheet" href="../css/style.css">
@@ -16,8 +16,21 @@
 
             <img class="movie-icon"src="https://cdn.pixabay.com/photo/2016/03/31/18/36/cinema-1294496__340.png"/>
         </header>
+        <div class="container">
+      <div class="menu">
+        <div class="m" onclick="location.href='../index.html'">영화 목록</div>
+        <div class="m-un" onclick="location.href='../genre/statics.php'">
+          장르별 영화 통계
+        </div>
+        <div
+          class="m-un"
+          onclick="location.href='../distributor/distributor.php'"
+        >
+          배급사 목록
+        </div>
+      </div>
 
-        <div class="title">
+        <div class="container-title">
             <?php
                 $mysqli = mysqli_connect("localhost", "team12", "team12", "team12");
 
@@ -26,22 +39,23 @@
                     exit();
                 }else{
                     try{
-                        $movie=$_POST['film']   
-                        $_SESSION['film_id'] =$fid; //update 할 movie id 반환
-                        $sql="UPDATE `film` SET title='".$_POST['title']."', year='".$POST['year']."' WHERE id='".$fid."'";
+                        session_start();
+                        $title=$_POST['title'];
+                        $fid=$_SESSION['film_id'];
+                        $sql="UPDATE film SET title='".$_POST['title']."', year='".$_POST['year']."' WHERE id='".$fid."'";
                         $res = mysqli_query($mysqli, $sql);
 
                         if($res){
-                            echo("update success");
-                        }catch(mysqli_sql_exception $e){
-                            echo("update fail");
+                            echo("<br/><br/>");
+                            echo ("<div>성공적으로 수정을 완료하였습니다</div>");
+                        }else{
+                            echo("<div>update를 실패하였습니다.<div>");
                         }
                         
                     }catch(Exception $e){
                         $mysqli -> rollback();
                         $mysql -> autocommit(TRUE);
                     }
-                    mysqli_free_result($res)
                     mysqli_close($mysqli);
                 }
             ?>

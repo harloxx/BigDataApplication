@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>HTML, CSS and JavaScript demo</title>
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
@@ -18,36 +19,22 @@
   </header>
 
 
-   <div class="container" >
-     <div class="menu">
-        <div class="m" onclick="location.href='index.html'">영화 목록</div>
-        <div class="m-un" onclick="location.href='./genre/statics.html'">장르별 영화 통계</div>
-        <div class="m-un" onclick="location.href='./distributor/distributor_add.html'">배급사 목록</div>
-     </div>
-     <div class="content">
-       <div class="content-title">영화 목록</div>
-       <div class="search-container">
-          영화 검색
-         <input name="movie-title"/>
-         <button class="button-grey" onclick="location.href='./movie/movie_search_result.html'">검색</button>
-         <button class="button-pink" onclick="location.href='./movie/add_movie.html'">추가</button>
-       </div>
-       <div class="movie-result">
-        <div>해리포터와 마법사의 돌
-          <button class="button-detail" onclick="location.href='./movie/movie_detail.html'">상세보기</button>
-          <button class="button-detail"  onclick="location.href='./movie/movie_review.html'">리뷰보기</button></div>
-        <div>해리포터와 불사조 기사단<button class="button-detail">상세보기</button><button class="button-detail">리뷰보기</button></div>
-        <div>해리포터와 마법사의 돌<button class="button-detail">상세보기</button><button class="button-detail">리뷰보기</button></div>
-      </div>
-
-
-     </div>
-     
+  <div class="container" >
+    <div class="menu">
+      <div class="m" onclick="location.href='index.html'">영화 목록</div>
+      <div class="m-un" onclick="location.href='./genre/statics.php'">장르별 영화 통계</div>
+      <div class="m-un" onclick="location.href='./distributor/distributor.php'">배급사 목록</div>
     </div>
-    
-
-
-<!-- End your code here -->
+    <div class="content">
+      <div class="content-title">영화 목록</div>
+      <form class="search-container" action="film_list.php" method="get">
+        영화 검색
+        <input type="text" name="movie-title"/>
+        <button class="button-grey">검색</button>
+      </form>
+      <button class="button-pink" onclick="location.href='./movie/add_movie.html'">추가</button>
+    </div>
+  </div>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,12 @@
+drop table distributor_film;
+drop table genre_film;
+drop table distributor;
+drop table genre;
+drop table review_star;
+drop table star;
+drop table review;
+drop table film;
+drop table country;
+drop table director;
+drop table film_type;
+drop table rating;

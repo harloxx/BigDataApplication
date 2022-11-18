@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
 <title>HTML, CSS and JavaScript demo</title>
 <link type="text/css" rel="stylesheet" href="../css/style.css"/>
 </head>
@@ -21,17 +22,17 @@
    <div class="container">
      <div class="menu">
       <div class="m" onclick="location.href='../index.html'">영화 목록</div>
-      <div class="m-un" onclick="location.href='../genre/statics.html'">영화 장르별 통계</div>
-      <div class="m-un" onclick="location.href='../distributor/distributor_add.html'">배급사 목록</div>
+      <div class="m-un" onclick="location.href='../genre/statics.php'">영화 장르별 통계</div>
+      <div class="m-un" onclick="location.href='../distributor/distributor.php'">배급사 목록</div>
   
     </div>
-       <form class="search-container" >
+       <form class="search-container" action="add_movie.php" method="POST">
           <div class="container-title">영화 추가</div>
-          영화 제목 : <input/>
-          개봉 연도 : <input/><br/>
-          영화 장르 : <input/>
-          제작 국가 : <input/><br/>
-            배급사  : <input/><br/><br/>
+          영화 제목 : <input type="text" name="filmTitle"><br>
+          개봉 연도 : <input type="number" name="filmYear"><br>
+          영화 장르 : <input type="text" name="filmGenre"><br>
+          제작 국가 : <input type="text" name="filmCountry"><br>
+          배급사 : <input type="text" name="filmDistributor"><br>
           <button class="button-pink">추가</button>
         </form>
        
